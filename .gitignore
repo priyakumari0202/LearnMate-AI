@@ -1,0 +1,41 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.env
+*.secret
+*.secrets
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+.streamlit/secrets.toml
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+
+# Test and tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Logs and operating-system files
+*.log
+.DS_Store
+Thumbs.db
