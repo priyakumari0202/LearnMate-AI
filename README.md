@@ -1,5 +1,7 @@
 # LearnMate AI
 
+**Live Project:** https://learnmate-ai-project2026.streamlit.app/
+
 LearnMate AI is a Streamlit app that creates a personalized learning roadmap using an existing IBM watsonx.ai deployment. Learners enter their education, current skills, career goal, daily study time, and target duration; the app sends those values to the deployed prompt template and displays the generated roadmap.
 
 ## Features
@@ -21,28 +23,29 @@ LearnMate AI is a Streamlit app that creates a personalized learning roadmap usi
 ## Setup
 
 1. Clone or download the project and open a terminal in the project directory.
+
 2. Create and activate a virtual environment:
 
-   ```powershell
-   py -m venv .venv
-   .\.venv\Scripts\Activate.ps1
-   ```
+```powershell
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
 
 3. Install dependencies:
 
-   ```powershell
-   python -m pip install -r requirements.txt
-   ```
+```powershell
+python -m pip install -r requirements.txt
+```
 
 4. Create a `.env` file in the project root and set your own IBM Cloud credentials and deployment details:
 
-   ```dotenv
-   WATSONX_API_KEY=your_ibm_cloud_api_key
-   WATSONX_URL=https://your-region.ml.cloud.ibm.com/ml/v1/deployments/your-deployment-id/text/generation_stream?version=2021-05-01
-   WATSONX_DEPLOYMENT_ID=your-deployment-id
-   ```
+```dotenv
+WATSONX_API_KEY=your_ibm_cloud_api_key
+WATSONX_URL=https://your-region.ml.cloud.ibm.com/ml/v1/deployments/your-deployment-id/text/generation_stream?version=2021-05-01
+WATSONX_DEPLOYMENT_ID=your-deployment-id
+```
 
-   Use the URL and deployment ID for the same deployment and region. Keep real values only in `.env` or your host's environment-variable settings. Do not commit credentials or paste them into source code.
+Use the URL and deployment ID for the same deployment and region. Keep real values only in `.env` or your host's environment-variable settings. Do not commit credentials or paste them into source code.
 
 ## Run
 
